@@ -1,4 +1,4 @@
-# NewsImages
+# DL-TXST NewsImages: Contextual Feature Enrichment for Image-Text Re-matching
 
 This repository contains Yuxiao Zhou's contribution to the [MediaEval 2021: NewsImages](https://multimediaeval.github.io/editions/2021/tasks/newsimages/) challenge, and also the code for our paper: [DL-TXST NewsImages: Contextual Feature Enrichment for Image-Text Re-matching](https://2021.multimediaeval.com/paper49.pdf).
 
@@ -15,14 +15,21 @@ In this paper, we describe our multi-view approach to the news image re-matching
 
 # Python Classes
 
-- [Data_Preprocessing.py](https://github.com/minazhou2020/NewsImage/blob/main/Data_Preprocessing.py)  
-- [Face_Name_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/Face_Name_Matching.py)  
-- [Image_Caption.py](https://github.com/minazhou2020/NewsImage/blob/main/Image_Caption.py)  
-- [Model_Ensembling.py](https://github.com/minazhou2020/NewsImage/blob/main//Model_Ensembling.py)  
-- [URL_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main//URL_Matching.py)
-- [Experiment.py](https://github.com/minazhou2020/NewsImage/blob/main/Experiment.py)  
+[Class Description](https://github.com/minazhou2020/NewsImage/blob/main/src/Class_Description.md)
 
-## Data
+[Data_Preprocessing.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Data_Preprocessing.py)  
+
+[Face_Name_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Face_Name_Matching.py)  
+
+[Image_Caption.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Image_Caption.py)  
+
+[Model_Ensembling.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Model_Ensembling.py)  
+
+[URL_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/URL_Matching.py)
+
+[Experiment.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Experiment.py)  
+
+# Data
 
 The repository also includes some of the source and result datasets used in the project.
 
