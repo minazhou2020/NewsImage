@@ -15,7 +15,7 @@ In this paper, we describe our multi-view approach to the news image re-matching
 
 # Python Classes
 
-- [Class Description](https://github.com/minazhou2020/NewsImage/blob/main/src/Class_Description.md)
+- [Class Description](https://github.com/minazhou2020/NewsImage/blob/main/Class_Description.md)
 - [Data_Preprocessing.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Data_Preprocessing.py)  
 - [Face_Name_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Face_Name_Matching.py)  
 - [Image_Caption.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Image_Caption.py)  
