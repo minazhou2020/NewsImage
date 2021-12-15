@@ -1,3 +1,36 @@
+# NewsImages
+
+This repository contains Yuxiao Zhou's contribution to the [MediaEval 2021: NewsImages](https://multimediaeval.github.io/editions/2021/tasks/newsimages/) challenge, and also the code for our paper: [DL-TXST NewsImages: Contextual Feature Enrichment for Image-Text Re-matching](https://2021.multimediaeval.com/paper49.pdf).
+
+In this paper, we describe our multi-view approach to the news image re-matching to text for news articles run submission. Our feature pool consists of provided features, baseline text and image features using pre-trained and domain adapted modeling, and contextual features for the news and image article. We have evaluated multiple modeling approaches for the features and employed a deep multi-level encoding network to predict a probability-like matching score of images for a news article. Our best results are the ensemble of proposed models, and we found the URL for the image and related images provides the most discriminative context in this pairing task.
+
+# Notebooks
+
+- [Guide_for_Using_Classes.ipyn](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Guide_for_Using_Classes.ipynb)b : Jupyter notebook file explaining how to use the all python class
+- [Data_Preprocessing.ipynb](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Data_Preprocessing.ipynb) : Jupyter notebook file explaining how to use the all Data_Preprocessing class
+- [URL_Matching.ipynb](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/URL_Matching.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
+- [Image_Captioning based Model.ipynb](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Image_Captioning%20based%20Model.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
+- [Face_Matching.ipynb](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Face_Matching.ipynb): Jupyter notebook file explaining how to use the all Face_Name_Matching class
+- [Model_Ensembling.ipynb](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Model_Ensembling.ipynb): Jupyter notebook file explaining how to use the all Model_Ensembling class
+
+# Python Classes
+
+- [Data_Preprocessing.py](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Data_Preprocessing.py)  
+- [Face_Name_Matching.py](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Face_Name_Matching.py)  
+- [Image_Caption.py](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Image_Caption.py)  
+- [Model_Ensembling.py](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Model_Ensembling.py)  
+- [URL_Matching.py](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/URL_Matching.py)
+- [Experiment.py](https://git.txstate.edu/CS7311/FIREWHEEL/blob/master/Yuxiao/Experiment.py)  
+
+## Data
+
+The repository also includes some of the source and result datasets used in the project.
+
+- [Processed data](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/processed_data/data)
+- [Processed images](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/processed_data/img)
+
+- [Results](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/result)
+
 ### Requirements:
 
 Python 3.7
@@ -13,45 +46,4 @@ scipy\
 matplotlib\
 \
 
-### What you can do with this class:
-
-#### Data Preprocessing
-- combine the first two batches of files for training usage
-- the third batch used for validation
-- crawl training, valation, and test images from given URLs 
-- extract features: image id, image url, article_title
-- tranlsate article title into English using Google Translate API (https://github.com/ssut/py-googletrans)
-
-#### URL Matching based Method
-- Feature Extraction: extract article url and image url from provided file
-- remove manually defined stop words from urls
-- URL tokenization
-- URL comparison: a pair of image url and article url is considered to be matched if they contains more than one common tokens.
-- sort the potential matched image list by the number of same tokens
-- Evaluate performance of this URL Matching based Method using MR100 on both training dataset and validation dataset
-
-#### Image Captioning based Model
-- acquired image caption from the pre-trained image captioning model (https://github.com/ruotianluo/ImageCaptioning.pytorch)
-- caculate the wmd between the each pair of image caption and article title
-- sort the potential matched image list by the wmd
-- Evaluate performance of this Image Captioning based Method using MR100 on both training dataset and validation dataset
-
-#### Face Matching
-##### Step 1:  Create a specific training dataset for face-name matching
-- A pair of article and image is used for this model training if the pair satisfies following two conditions: 1. the title of article include person's name, 2. the image is a human face image
-- Extract person's name from article title
-- Remove the image from this specific traning dataset if face can't be detected using multiple face detection frameworks
-- Build connections between the extracted name and the corresponding human face image
-- If there is no connected image for the extracted name in the training dataset, we crawl five face image using the extracted name as keyword from website.
-
-##### Step 2: Face Name Matching
-- Extract the person's names from testing article titles
-- Find the corresponding face images from the training dataset which created in step 1
-- Encode the face images into feature vectors
-- Compare the corresponding face images with each test face image by caculating the cosine distance between two feature vectors
-- Two face images are regared as matched if the cosine distance between two vectors is smaller or equal to 0.4 
-- Sort the potential matcheing image list by both cosine distance and total matches
-
-##### Step 3:Evaluation
-
-##### Step 4: Prediction
+##### 
