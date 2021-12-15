@@ -6,28 +6,22 @@ In this paper, we describe our multi-view approach to the news image re-matching
 
 # Notebooks
 
-- [Guide_for_Using_Classes.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/Guide_for_Using_Classes.ipynb): Jupyter notebook file explaining how to use the all python class
-- [Data_Preprocessing.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/Data_Preprocessing.ipynb) : Jupyter notebook file explaining how to use the all Data_Preprocessing class
-- [URL_Matching.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/URL_Matching.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
-- [Image_Captioning based Model.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/Image_Captioning%20based%20Model.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
-- [Face_Matching.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/Face_Matching.ipynb): Jupyter notebook file explaining how to use the all Face_Name_Matching class
-- [Model_Ensembling.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/Model_Ensembling.ipynb): Jupyter notebook file explaining how to use the all Model_Ensembling class
+- [Guide_for_Using_Classes.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Guide_for_Using_Classes.ipynb): Jupyter notebook file explaining how to use the all python class
+- [Data_Preprocessing.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Data_Preprocessing.ipynb) : Jupyter notebook file explaining how to use the all Data_Preprocessing class
+- [URL_Matching.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/URL_Matching.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
+- [Image_Captioning based Model.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Image_Captioning%20based%20Model.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
+- [Face_Matching.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Face_Matching.ipynb): Jupyter notebook file explaining how to use the all Face_Name_Matching class
+- [Model_Ensembling.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Model_Ensembling.ipynb): Jupyter notebook file explaining how to use the all Model_Ensembling class
 
 # Python Classes
 
-[Class Description](https://github.com/minazhou2020/NewsImage/blob/main/src/Class_Description.md)
-
-[Data_Preprocessing.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Data_Preprocessing.py)  
-
-[Face_Name_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Face_Name_Matching.py)  
-
-[Image_Caption.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Image_Caption.py)  
-
-[Model_Ensembling.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Model_Ensembling.py)  
-
-[URL_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/URL_Matching.py)
-
-[Experiment.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Experiment.py)  
+- [Class Description](https://github.com/minazhou2020/NewsImage/blob/main/src/Class_Description.md)
+- [Data_Preprocessing.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Data_Preprocessing.py)  
+- [Face_Name_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Face_Name_Matching.py)  
+- [Image_Caption.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Image_Caption.py)  
+- [Model_Ensembling.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Model_Ensembling.py)  
+- [URL_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/URL_Matching.py)
+- [Experiment.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Experiment.py)  
 
 # Data
 
