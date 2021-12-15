@@ -29,7 +29,6 @@ The repository also includes some of the source and result datasets used in the 
 
 - [Processed data](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/processed_data/data)
 - [Processed images](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/processed_data/img)
-
 - [Results](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/result)
 
 ### Requirements:
