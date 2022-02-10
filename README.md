@@ -28,7 +28,17 @@ The provided data consists of four batches of data in total. The first three are
 
 ## Results
 
-![Results](https://github.com/minazhou2020/NewsImage/blob/main/img/result.png)
+Run1 combines three different methods. Equal weights are assigned to the categorization-based method, and a combination of face-name matching and image captioning-based methods. The ranking of a candidate image in Run1 is: 
+
+𝑅𝑅Run1 =0.5𝑅𝑅 Categorization +0.5 (𝑅𝑅Face+𝑅𝑅caption) 
+
+Run2 combines all proposed methods. The first three models are ensembled using the same approach as in Run1. This ensembled model is used for creating the initial top 100 image list. Then we append the result, which is generated from the URL matchingbased method, to the end of the top 100 image list. 
+
+Run3 is like Run2. The only difference is that we append the result of last method to the head of the top 100 image list. Since the image URL is an artificial feature, the results from Run1 and Run3 are not included in the result. 
+
+![ Results from different Runs on Test Dataset](https://github.com/minazhou2020/NewsImage/blob/main/img/result_1.png)
+
+![Evaluation Result on Train and Validation Dataset](https://github.com/minazhou2020/NewsImage/blob/main/img/result.png)
 
 ## Notebooks
 
