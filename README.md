@@ -36,9 +36,9 @@ Run2 combines all proposed methods. The first three models are ensembled using t
 
 Run3 is like Run2. The only difference is that we append the result of last method to the head of the top 100 image list. Since the image URL is an artificial feature, the results from Run1 and Run3 are not included in the result. 
 
-![ Results from different Runs on Test Dataset](https://github.com/minazhou2020/NewsImage/blob/main/img/result_1.png=250x)
+Evaluation Result on Train and Validation Dataset<img src="https://github.com/minazhou2020/NewsImage/blob/main/img/result.png" alt="Results from different Runs on Test Dataset" width="200"/>
 
-![Evaluation Result on Train and Validation Dataset](https://github.com/minazhou2020/NewsImage/blob/main/img/result.png=250x)
+Results from different Runs on Test Dataset <img src="https://github.com/minazhou2020/NewsImage/blob/main/img/result_1.png" alt="Results from different Runs on Test Dataset" width="200"/>
 
 ## Notebooks
 
