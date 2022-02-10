@@ -2,47 +2,42 @@
 
 This repository contains Yuxiao Zhou's contribution to the [MediaEval 2021: NewsImages](https://multimediaeval.github.io/editions/2021/tasks/newsimages/) challenge, and also the code for our paper: [DL-TXST NewsImages: Contextual Feature Enrichment for Image-Text Re-matching](https://2021.multimediaeval.com/paper49.pdf).
 
-In this paper, we describe our multi-view approach to the news image re-matching to text for news articles run submission. Our feature pool consists of provided features, baseline text and image features using pre-trained and domain adapted modeling, and contextual features for the news and image article. We have evaluated multiple modeling approaches for the features and employed a deep multi-level encoding network to predict a probability-like matching score of images for a news article. Our best results are the ensemble of proposed models, and we found the URL for the image and related images provides the most discriminative context in this pairing task.
+## Introduction
 
-# Notebooks
+In the project, we build multiple models to describe the connection between the textual content of articles and the images that accompany them, and employed these models to predict which image was published with a given news article in the provided dataset.
 
-- [Guide_for_Using_Classes.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Guide_for_Using_Classes.ipynb): Jupyter notebook file explaining how to use the all python class
-- [Data_Preprocessing.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Data_Preprocessing.ipynb) : Jupyter notebook file explaining how to use the all Data_Preprocessing class
-- [URL_Matching.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/URL_Matching.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
-- [Image_Captioning based Model.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Image_Captioning%20based%20Model.ipynb): Jupyter notebook file explaining how to use the all URL_Matching class
-- [Face_Matching.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Face_Matching.ipynb): Jupyter notebook file explaining how to use the all Face_Name_Matching class
-- [Model_Ensembling.ipynb](https://github.com/minazhou2020/NewsImage/blob/main/notebooks/Model_Ensembling.ipynb): Jupyter notebook file explaining how to use the all Model_Ensembling class
+We evaluate our proposed model on the benchmark dataset derived from four months of webserver log files of a German  news publisher. The performance of the proposed model is  measured by image matching precision such as MRR and Mean Recall at different depths.
 
-# Python Classes
+## Data Pipelines
 
-- [Class Description](https://github.com/minazhou2020/NewsImage/blob/main/Class_Description.md)
-- [Data_Preprocessing.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Data_Preprocessing.py)  
-- [Face_Name_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Face_Name_Matching.py)  
-- [Image_Caption.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Image_Caption.py)  
-- [Model_Ensembling.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Model_Ensembling.py)  
-- [URL_Matching.py](https://github.com/minazhou2020/NewsImage/blob/main/src/URL_Matching.py)
-- [Experiment.py](https://github.com/minazhou2020/NewsImage/blob/main/src/Experiment.py)  
+![Data Pipeline](https://github.com/minazhou2020/NewsImage/blob/main/img/FinalProjectDiagram.png)
 
-# Data
+## Benchmark Dataset
 
-The repository also includes some of the source and result datasets used in the project.
+The Multimedia Evaluation Benchmark (MediaEval) NewsImage task offered data covering four months of news from a German news publisher. The data contains information related to articles, images, and interactions with users. Each article and images has a reference number assigned. Articles’ meta data includes the URL, title, and a text snippet of at most 256 characters. 
 
-- [Processed data](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/processed_data/data)
-- [Processed images](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/processed_data/img)
-- [Results](https://git.txstate.edu/CS7311/FIREWHEEL/tree/master/Yuxiao/result)
+The provided data consists of four batches of data in total. The first three are used for training, and the last one is used for testing. The training data contains the links between articles and images as well as the interaction statistics, while such links have been removed from test data.
 
-### Requirements:
+## Requirement
 
-Python 3.7
-tensorflow\
-pytorch\
-py-googletrans\
-NLTK\
-gensim\
-cv2\
-icrawler\
-DeepFace\
-scipy\
-matplotlib\
+* Programming Lanugage: Python3
+* Data Exploring and Analysis: Pandas
+* Deep Learning Model: Tensorflow, Keras, Pytorch, Scikit-Learn
+* Computer Vision: OpenCV
+* Natural Language Processing: nltk
 
-##### 
+## Results
+
+![Results](https://github.com/minazhou2020/NewsImage/blob/main/img/result.png)
+
+## Notebooks
+
+ [Jupyter Notebooks](https://github.com/aarcosg/traffic-sign-detection/blob/master/Run_models_on_new_images.ipynb) are provided with instructions to run the models on new datasets.
+
+## License
+
+This code is distributed under MIT LICENSE
+
+## Author
+
+Yuxiao Zhou, [yuxiao.zh@gmail.com](mailto:yuxiao.zh@gmail.com)
