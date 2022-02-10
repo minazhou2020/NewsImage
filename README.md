@@ -12,6 +12,10 @@ We evaluate our proposed model on the benchmark dataset derived from four months
 
 ![Data Pipeline](https://github.com/minazhou2020/NewsImage/blob/main/img/FinalProjectDiagram.png)
 
+## Data Pipelines
+
+![Data Pipeline](https://github.com/minazhou2020/NewsImage/blob/main/img/FinalProjectDiagram.png)
+
 ## Benchmark Dataset
 
 The Multimedia Evaluation Benchmark (MediaEval) NewsImage task offered data covering four months of news from a German news publisher. The data contains information related to articles, images, and interactions with users. Each article and images has a reference number assigned. Articles’ meta data includes the URL, title, and a text snippet of at most 256 characters. 
@@ -46,7 +50,7 @@ Results from different Runs on Test Dataset
 
 ## Notebooks
 
- [Jupyter Notebooks](https://github.com/aarcosg/traffic-sign-detection/blob/master/Run_models_on_new_images.ipynb) are provided with instructions to run the models on new datasets.
+ [Jupyter Notebooks](https://github.com/minazhou2020/NewsImage/tree/main/notebooks) are provided with instructions to run the models on new datasets.
 
 ## License
 
